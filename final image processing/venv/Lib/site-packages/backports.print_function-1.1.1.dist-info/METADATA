@@ -1,0 +1,51 @@
+Metadata-Version: 2.0
+Name: backports.print-function
+Version: 1.1.1
+Summary: Print function with Python 3.3 flush argument
+Home-page: https://github.com/jaraco/backports.print_function
+Author: Jason R. Coombs
+Author-email: jaraco@jaraco.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.6
+Provides-Extra: docs
+Requires-Dist: jaraco.packaging (>=3.2); extra == 'docs'
+Requires-Dist: rst.linker (>=1.9); extra == 'docs'
+Requires-Dist: sphinx; extra == 'docs'
+Provides-Extra: testing
+Requires-Dist: pytest (>=2.8); extra == 'testing'
+Requires-Dist: pytest-sugar; extra == 'testing'
+
+.. image:: https://img.shields.io/pypi/v/backports.print_function.svg
+   :target: https://pypi.org/project/backports.print_function
+
+.. image:: https://img.shields.io/pypi/pyversions/backports.print_function.svg
+
+.. image:: https://img.shields.io/pypi/dm/backports.print_function.svg
+
+.. image:: https://img.shields.io/travis/jaraco/backports.print_function/master.svg
+   :target: http://travis-ci.org/jaraco/backports.print_function
+
+Add support for the Python 3.3 flush argument.
+
+License
+=======
+
+License is indicated in the project metadata (typically one or more
+of the Trove classifiers). For more details, see `this explanation
+<https://github.com/jaraco/skeleton/issues/1>`_.
+
+Usage
+=====
+
+from backports.print_function import print_
+
+print_('Partial line', end='', flush=True)
+
+
